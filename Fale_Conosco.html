@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="historia dos gatos">
+    <meta name="keywords" content="gatos, gatinhos, puppies.">
+    <meta name="author" content="Danielle Sanches">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon_blue_cat.ico" type="img/x-icon">
+    <title>Fale conosco</title>
+</head>
+<body>
+    <header>  
+
+        <div id="acessiblidade">
+            <ul id="atalho">
+                <li><a href="#conteudo" accesskey="1" title="ir diretamente para o contuedo">Ir para o conteudo da página [1] </a> </li>
+                <li><a href="#menu" accesskey="2" title="ir diretamente para o menu">Ir para o menu [2] </a> </li>
+                <li><a href="#rodape" accesskey="3" title="ir diretamente para o rodapé">Ir para o rodapé da página [3] </a> </li>
+                <li id="pgacessibilidade"><a href="acessibilidade.html" title="ir para a página de acessiblidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">Contraste Preto</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">Sem Contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar_fonte">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir_fonte">A-</a></li>
+  
+                
+                          
+            </ul>
+        </div>
+        
+        <img id="topo_css" src="imagens/cabeçalho1.png" alt="foto de sete cabeças de gato, 1º branco com detalhes laranja e olhos azuis,2ºorelhas e testa preto e rosto branco de olhos verdes,3º preto até o nariz abixo do nariz branco de olhos azuis,4º tricolor de olhos verdes,5º Tigrado de olhos azuis,6ºtricolor em tons de cinza com olhos azuis, 7º siamesa de olhos azuis">
+       
+ 
+        <nav>
+               
+           
+            <label for="bt_menu"><img src="imagens/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+           
+            <ul id="menu">
+  
+               <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nina.html">Nina</a></li>
+                   <li><a href="javascript:void(0);">Quatro Presentes da Nina </a>
+                       <ul>
+                           <li><a href="Machos_Nino_Pipoca.html">Machos Nino & Pipoca</a></li>
+                           <li><a href="Femeas_Pandora_Pacoca.html">Fêmeas Pandora & Paçoca</a></li>
+                       </ul>
+                   </li>
+                <li><a href="Tigrinho.html">Tigrinho</a></li>
+                <li><a href="Vitoria.html">Vitória</a></li>
+                <li><a href="Fale_Conosco.html">Fale Conosco</a></li>
+            </ul>
+          </nav>
+     
+       
+  </header>
+
+
+        <main>
+
+            <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li><a href=Nina.html>Nina</a></li>
+            <li><a href="javascript:void(0);">Quatro Presentes da Nina </a>
+            <li><a href="Machos_Nino_Pipoca.html">Machos: Nino & Pipoca</a></li>
+            <li><a href="Femeas_Pandora_Pacoca.html">Fêmeas: Pandora & Paçoca</a></li>
+            <li><a href="Tigrinho.html">Tigrinho</a></li>
+            <li><a href="Vitoria.html">Vitória</a></li>
+            <li>Fale Conosco</li>
+            </ul>
+
+            
+                                    
+                                    <section id="conteudo" >
+
+                                        <h1>FALE CONOSCO</h1>
+
+                                        <audio id="audio" controls>
+                                            <source src="audio/fale-conosco_1.mp3" type="audio/mp3">
+                                            Este navegador não suporta o elemento audio ou o formato de arquivo utilizado
+                                        </audio>
+                                        
+
+
+                                        <p class="texto2">Para conhecer a Cupkat Trinkets, uma empresa criada em nossa homenagem,preencha esses dados, temos lindas canecas e garrafinhas personalizadas para vocês!!! </p>
+
+                                        <form name="contato" id="contato" method="POST">
+                                            <fieldset>
+                                                <legend>Dados Pessoais</legend>
+                                                  <label for="Nome" class="required">Nome</label><br>
+                                                  <input type="text" name="Nome" id="Nome" required placeholder="Nome Completo"><br>
+                                                  <label for="CPF" class="required">CPF</label><br>
+                                                  <input type="text" name="CPF" id="CPF" required placeholder="123.456.789.00"><br>
+                                                  <label for="Datadenascimento" class="required">Data de nascimento</label><br>
+                                                  <input type="date" name="data" id="Datadenascimento" required ><br>
+                                                  <label for="Telefone">Telefone Residencial</label><br>
+                                                  <input type="number" name="tel" id="Telefone" placeholder="+55(XX)1234-5678"><br>
+                                                  <label for="Celular" class="required">Celular(Whatsapp)</label><br>
+                                                  <input type="number" name="Celular" id="Celular" required placeholder="+55(XX)12345-6789"><br>
+                                                  <label for="email" class="required">Email</label><br>
+                                                  <input type="email" name="email" id="email" required placeholder="nina@cupkat.com.br"><br>
+
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>Endereço</legend>
+                                                  <label for="CEP" class="required">CEP</label><br>
+                                                  <input type="text" name="CEP" id="CEP" required placeholder="12345-678"><br>
+                                                  <label for="RUA">Rua</label><br>
+                                                  <input type="text" name="RUA" id="RUA" placeholder="Rua dos Gatinhos"><br>
+                                                  <label for="Numero" class="required">Número</label><br>
+                                                  <input type="number" name="número" id="Numero" required placeholder="123"><br>
+                                                  <label for="Complemento">Completo</label><br>
+                                                  <input type="text" name="Complemento" id="Complemento"><br>
+                                                  <label for="Bairro">Bairro</label><br>
+                                                  <input type="text" name="Bairro" id="Bairro"><br>
+                                                  <label for="Cidade">Cidade</label><br>
+                                                  <input type="text" name="cidade" id="Cidade" ><br>
+                                                  <label for="Estado">Estado</label><br>
+                                                  <input type="text" name="Estado" id="Estado">
+
+                                            </fieldset>
+
+                                            <fieldset>
+                                                   <legend>Dados da Mensangem</legend>
+                                                   <label for="Assunto" class="required" >Assunto</label><br>
+                                                   <select name="Assunto" id="Assunto" required>
+                                                       <option value=""  selected disabled>Selecione um Assunto</option>
+                                                       <option value="Dúvida">Dúvida ¯\_(ツ)_/¯</option>
+                                                       <option value="Elogio">Elogio :)</option>
+                                                       <option value="Reclamação">Reclamação:(</option>
+
+                                                    </select><br>
+                                                     
+                                                   <label for="Mensangem" class="required">Mensangem</label><br>
+                                                   <textarea name="Mensangem" id="Mensangem" 
+                                                  required placeholder="Digite a mensagem aqui"  rows="10" cols="50"></textarea>
+
+                                            </fieldset>
+                                              
+                                            <input type="submit" name="Enviar" id="Enviar" value="Enviar">
+                                            <input type="reset" name="Limpar" id="Limpar" value="Limpar">
+
+                                        </form>
+                                    </section>
+        </main>
+
+
+               <footer id="rodape"><p>Desenvolvido por Danielle Sanches&copy;2021</p></footer> 
+</body>
+</html>
